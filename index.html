@@ -1,69 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Saumya Prasad | Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #fff;
+      border-bottom: 1px solid #eaeaea;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    section {
+      padding: 6rem 2rem 4rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 1.75rem;
+      color: #1e3a8a;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      padding: 8rem 2rem 4rem;
+      background: #f9f9f9;
+    }
+
+    .hero img {
+      width: 260px;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #eaeaea;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text p {
+      margin: 0.5rem 0;
+    }
+
+    .hero-text h2 {
+      font-size: 2.5rem;
+      margin: 0.25rem 0;
+    }
+
+    .hero-text h3 {
+      color: #555;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .hero-buttons a {
+      display: inline-block;
+      margin-right: 1rem;
+      margin-bottom: 0.5rem;
+      padding: 0.6rem 1.4rem;
+      font-weight: 500;
+      border-radius: 25px;
+      border: 1.5px solid #111;
+      text-decoration: none;
+      color: #000;
+      transition: background 0.3s;
+    }
+
+    .hero-buttons a.dark {
+      background: #333;
+      color: #fff;
+      border: none;
+    }
+
+    .hero-buttons a:hover {
+      background: #eaeaea;
+    }
+
+    .social-icons a {
+      margin-right: 1rem;
+      font-size: 1.5rem;
+      color: #111;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #1e3a8a;
+    }
+
+    .grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #eaeaea;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      padding: 2rem;
+      text-align: center;
+      background: #1e3a8a;
+      color: #fff;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
     <h1>Saumya Prasad</h1>
-    <p>Aspiring Analyst | Data Enthusiast | Tech Explorer</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <section class="hero">
+    <img src="profile.jpg" alt="Saumya Prasad">
+    <div class="hero-text">
+      <p>Hello, I'm</p>
+      <h2>Saumya Prasad</h2>
+      <h3>Aspiring Data Analyst</h3>
+      <div class="hero-buttons">
+        <a href="Saumya_Prasad_Resume.pdf" download>Download CV</a>
+        <a href="#contact" class="dark">Contact Info</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/saumyaprasad07" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </section>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Hello! I'm a recent graduate from CSULB with a passion for analytics, data visualization, and solving business problems with data-driven insights. I'm actively seeking roles as a Data Analyst, Business Analyst, or similar positions.</p>
+    <p>I’m a recent graduate from CSULB passionate about turning data into actionable insights. With hands-on experience in Excel, Power BI, and Python, I love solving business challenges through analytics and visualization.</p>
   </section>
 
   <section id="skills">
     <h2>Skills</h2>
-    <ul>
-      <li>Excel, Power BI, Tableau</li>
-      <li>SQL (basic), Redshift (learning)</li>
-      <li>Python (beginner)</li>
-      <li>Data Cleaning, EDA, Dashboards</li>
-    </ul>
+    <div class="grid">
+      <div class="card"><h4>Data Visualization</h4><p>Power BI, Tableau, Matplotlib</p></div>
+      <div class="card"><h4>Data Analysis</h4><p>Excel, SQL, Pandas</p></div>
+      <div class="card"><h4>Programming</h4><p>Python (NumPy, Pandas), R (beginner)</p></div>
+      <div class="card"><h4>Cloud & Databases</h4><p>Amazon Redshift (learning), MySQL</p></div>
+    </div>
   </section>
 
   <section id="experience">
     <h2>Experience</h2>
-    <p>No formal experience yet, but I have worked on several personal projects and academic assignments demonstrating analytical thinking, attention to detail, and data storytelling.</p>
+    <div class="grid">
+      <div class="card">
+        <h4>Data Analyst Intern</h4>
+        <p>University Project • Jan 2025 - May 2025</p>
+        <ul>
+          <li>Built interactive dashboards to track student performance.</li>
+          <li>Automated data cleaning pipelines reducing manual work by 50%.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Research Assistant</h4>
+        <p>CSULB • Aug 2024 - Dec 2024</p>
+        <ul>
+          <li>Analyzed survey data for insights on campus resource usage.</li>
+          <li>Co-authored a paper on student learning behaviors.</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project">
-      <h3>AI-Powered Travel Planner App</h3>
-      <p>A prototype application developed using JustinMind that allows users to create AI-generated and custom travel itineraries. Designed a clean, user-friendly UI and tested key user flows.</p>
+    <div class="grid">
+      <div class="card">
+        <h4>AI-Powered Travel Planner</h4>
+        <p>Prototype app for generating custom trip itineraries using AI.</p>
+      </div>
+      <div class="card">
+        <h4>Sales Dashboard</h4>
+        <p>Interactive Power BI dashboard showcasing sales trends and KPIs.</p>
+      </div>
     </div>
-    <div class="project">
-      <h3>Data Dashboard with Excel & Power BI</h3>
-      <p>Created interactive dashboards from mock business datasets, including sales trends, KPIs, and customer segmentation. Focused on clean design and storytelling with data.</p>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+    <div class="grid">
+      <div class="card">
+        <h4>Student Learning Patterns</h4>
+        <p>Investigated factors influencing academic success at CSULB.</p>
+      </div>
+      <div class="card">
+        <h4>Resource Allocation Study</h4>
+        <p>Analyzed campus facility usage to recommend improvements.</p>
+      </div>
     </div>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: saumyachandrakant.prasad01@student.csulb.edu</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank">linkedin.com/in/YOUR_LINKEDIN</a></p>
     <p>GitHub: <a href="https://github.com/saumyaprasad07" target="_blank">github.com/saumyaprasad07</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/YOUR_LINKEDIN/" target="_blank">linkedin.com/in/YOUR_LINKEDIN</a></p>
-
-    <div class="resume-download">
-      <a href="Saumya_Prasad_Resume.pdf" download>Download Résumé</a>
-    </div>
   </section>
 
   <footer>

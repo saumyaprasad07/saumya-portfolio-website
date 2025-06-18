@@ -1,76 +1,100 @@
-/* styles.css */
-
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
   color: #333;
 }
 
 header {
-  background-color: #1e3a8a;
-  color: white;
-  padding: 2rem;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  border-bottom: 1px solid #eaeaea;
 }
 
-nav {
-  background-color: #3b82f6;
-  padding: 1rem 0;
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
   gap: 2rem;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 nav a {
-  color: white;
   text-decoration: none;
+  color: #000;
+  font-weight: 400;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 4rem 2rem;
+}
+
+.hero img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #f0f0f0;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text p {
+  margin: 0.25rem 0;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  margin: 0.25rem 0;
+}
+
+.hero-text h3 {
+  color: #666;
   font-weight: 500;
 }
 
-section {
-  padding: 2rem;
-  max-width: 900px;
-  margin: auto;
+.hero-buttons {
+  margin-top: 1rem;
 }
 
-h2 {
-  color: #1e3a8a;
-  margin-bottom: 1rem;
-}
-
-.project {
-  background-color: #ffffff;
-  border: 1px solid #ccc;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-}
-
-.resume-download {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.resume-download a {
+.hero-buttons a {
   display: inline-block;
-  background-color: #1e3a8a;
-  color: white;
-  padding: 0.75rem 1.5rem;
+  margin-right: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  border-radius: 25px;
+  border: 1.5px solid #111;
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+  color: #000;
 }
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #1e3a8a;
-  color: white;
+.hero-buttons a.dark {
+  background: #333;
+  color: #fff;
+  border: none;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: #111;
+  text-decoration: none;
 }
