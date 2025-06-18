@@ -1,266 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saumya Prasad | Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #fff;
-      color: #333;
-      scroll-behavior: smooth;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krupa Shah | Portfolio</title>
+    <meta property="og:title" content="Krupa Shah | Software Developer Portfolio">
+    <meta property="og:description" content="Specializing in developing efficient applications and solving complex problems. Explore my projects and skills.">
+    <meta property="og:image" content="https://github.com/krupas23/krupas23/blob/main/og-image.jpeg">  <!-- Replace with your image URL -->
+    <meta property="og:url" content="https://krupashah.netlify.app/">  <!-- Your website URL -->
+    <meta property="og:type" content="website">
 
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background: #fff;
-      border-bottom: 1px solid #eaeaea;
-      z-index: 1000;
-    }
+    <!-- Optional but recommended for SEO -->
+    <meta name="description" content="Explore Krupa's portfolio featuring AI projects, web development, and data analysis expertise.">
+    <meta name="keywords" content="Full-Stack Developer, Machine Learning, Web Development, AI Projects, NLP">
+    <meta name="author" content="Krupa Shah">
 
-    header h1 {
-      font-size: 1.25rem;
-      font-weight: 500;
-      margin: 0;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-    }
-
-    section {
-      padding: 6rem 2rem 4rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    section h2 {
-      font-size: 1.75rem;
-      color: #1e3a8a;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-
-    .hero {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 3rem;
-      padding: 8rem 2rem 4rem;
-      background: #f9f9f9;
-    }
-
-    .hero img {
-      width: 260px;
-      height: 260px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid #eaeaea;
-    }
-
-    .hero-text {
-      max-width: 500px;
-    }
-
-    .hero-text p {
-      margin: 0.5rem 0;
-    }
-
-    .hero-text h2 {
-      font-size: 2.5rem;
-      margin: 0.25rem 0;
-    }
-
-    .hero-text h3 {
-      color: #555;
-      font-weight: 500;
-      margin-bottom: 1rem;
-    }
-
-    .hero-buttons a {
-      display: inline-block;
-      margin-right: 1rem;
-      margin-bottom: 0.5rem;
-      padding: 0.6rem 1.4rem;
-      font-weight: 500;
-      border-radius: 25px;
-      border: 1.5px solid #111;
-      text-decoration: none;
-      color: #000;
-      transition: background 0.3s;
-    }
-
-    .hero-buttons a.dark {
-      background: #333;
-      color: #fff;
-      border: none;
-    }
-
-    .hero-buttons a:hover {
-      background: #eaeaea;
-    }
-
-    .social-icons a {
-      margin-right: 1rem;
-      font-size: 1.5rem;
-      color: #111;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-
-    .social-icons a:hover {
-      color: #1e3a8a;
-    }
-
-    .grid {
-      display: grid;
-      gap: 2rem;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-
-    .card {
-      background: #fff;
-      border: 1px solid #eaeaea;
-      border-radius: 8px;
-      padding: 1.5rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-
-    footer {
-      padding: 2rem;
-      text-align: center;
-      background: #1e3a8a;
-      color: #fff;
-    }
-  </style>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Saumya Prasad</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <nav id = "desktop-nav">
+    <div class="logo"><a href='/'>Krupa Shah</a></div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
     </nav>
-  </header>
-
-  <section class="hero">
-    <img src="profile.jpg" alt="Saumya Prasad">
-    <div class="hero-text">
-      <p>Hello, I'm</p>
-      <h2>Saumya Prasad</h2>
-      <h3>Aspiring Data Analyst</h3>
-      <div class="hero-buttons">
-        <a href="Saumya_Prasad_Resume.pdf" download>Download CV</a>
-        <a href="#contact" class="dark">Contact Info</a>
-      </div>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/saumyaprasad07" target="_blank"><i class="fab fa-github"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I’m a recent graduate from CSULB passionate about turning data into actionable insights. With hands-on experience in Excel, Power BI, and Python, I love solving business challenges through analytics and visualization.</p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="grid">
-      <div class="card"><h4>Data Visualization</h4><p>Power BI, Tableau, Matplotlib</p></div>
-      <div class="card"><h4>Data Analysis</h4><p>Excel, SQL, Pandas</p></div>
-      <div class="card"><h4>Programming</h4><p>Python (NumPy, Pandas), R (beginner)</p></div>
-      <div class="card"><h4>Cloud & Databases</h4><p>Amazon Redshift (learning), MySQL</p></div>
-    </div>
-  </section>
-
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="grid">
-      <div class="card">
-        <h4>Data Analyst Intern</h4>
-        <p>University Project • Jan 2025 - May 2025</p>
-        <ul>
-          <li>Built interactive dashboards to track student performance.</li>
-          <li>Automated data cleaning pipelines reducing manual work by 50%.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h4>Research Assistant</h4>
-        <p>CSULB • Aug 2024 - Dec 2024</p>
-        <ul>
-          <li>Analyzed survey data for insights on campus resource usage.</li>
-          <li>Co-authored a paper on student learning behaviors.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="grid">
-      <div class="card">
-        <h4>AI-Powered Travel Planner</h4>
-        <p>Prototype app for generating custom trip itineraries using AI.</p>
-      </div>
-      <div class="card">
-        <h4>Sales Dashboard</h4>
-        <p>Interactive Power BI dashboard showcasing sales trends and KPIs.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="research">
-    <h2>Research</h2>
-    <div class="grid">
-      <div class="card">
-        <h4>Student Learning Patterns</h4>
-        <p>Investigated factors influencing academic success at CSULB.</p>
-      </div>
-      <div class="card">
-        <h4>Resource Allocation Study</h4>
-        <p>Analyzed campus facility usage to recommend improvements.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: saumyachandrakant.prasad01@student.csulb.edu</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank">linkedin.com/in/YOUR_LINKEDIN</a></p>
-    <p>GitHub: <a href="https://github.com/saumyaprasad07" target="_blank">github.com/saumyaprasad07</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Saumya Prasad</p>
-  </footer>
+    <nav id="hamburger-nav">
+        <div class="logo"><a href='/'>Krupa Shah</a></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#research" onclick="toggleMenu()">Research</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Krupa Shah profile picture ">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Krupa Shah</h1>
+            <p class="section__text__p2">Software Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/krupa-resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href = './#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="window.open('https://www.linkedin.com/in/krupas23/', '_blank');">
+                <img src="./assets/github.png" alt="My GitHub Profile" class="icon" onclick="window.open('https://github.com/krupas23', '_blank');">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Skills</h3>
+                        <p>Software Development <br />ML & NLP</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.E Information Technology<br />MS Computer Science</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Hey there! I am Krupa &#128075</p>
+                    <p>I'm a passionate software developer and AI enthusiast with a Master's in Computer Science from <a href="https://www.syracuse.edu/" target="_blank"><u>Syracuse University</u></a> 🍊.</p>
+                    <p>I'm always excited to build stuff, tackle challenges and turn ideas into projects that make a real-time impact. Through a blend of academic and practical experience, I have acquired proficiency in Python, AI/ML, Data Analytics and System Design. </p>
+                    <p>Currently based in NY, I grew up in India and enjoy exploring new tech to stay ahead in this ever-changing landscape. I love street food and a good dose of Bollywood music, always looking for new flavors and tunes to enjoy in my free time.</p>
+                 </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'"/>
+    </section>
+    <section id="skills">
+        <p class="section__text__p1">Browse my</p>
+        <h1 class="section-title">Skills</h1>
+        <div class="skills-container">
+            <div class="skills-category">
+                <p class="section__text__p2">Programming Languages</p>
+                <div class="skills__container">
+                    <span>Python</span>
+                    <span>C++</span>
+                    <span>Java</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Haskell</span>
+                    <span>Linux</span>
+                </div>
+            </div>    
+            <div class="skills-category">
+                <p class="section__text__p2">Machine Learning Frameworks</p>
+                <div class="skills__container">
+                    <span>Keras</span>
+                    <span>Pandas</span>
+                    <span>NumPy</span>
+                    <span>TensorFlow</span>
+                    <span>Scikit-Learn</span>
+                    <span>PySpark</span>
+                </div>
+            </div>
+    
+            <div class="skills-category">
+                <p class="section__text__p2">Database Systems</p>
+                <div class="skills__container">
+                    <span>MySQL</span>
+                    <span>MS SQL</span>
+                    <span>MongoDB</span>
+                </div>
+            </div>
+    
+            <div class="skills-category">
+                <p class="section__text__p2">Tools & Platforms</p>
+                <div class="skills__container">
+                    <span>VS Code</span>
+                    <span>Jupyter Notebook</span>
+                    <span>Eclipse</span>
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>Docker</span>
+                    <span>Jira</span>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+    </section>   
+    <section id="experience">
+        <p class="section__text__p1">Explore my</p>
+        <h1 class="section-title">Experience</h1>
+        <div class="experience-container">
+          <div class="job">
+            <h3>Summer Internship - <a class="job-link" href="https://www.mineralstech.com/">Minerals Technologies Inc.</a></h3>
+            <p class="role">IT Intern</p>
+            <p class="duration">May 2024 - August 2024</p>
+            <ul class="responsibilities">
+              <li>Assisted in administration, support, and maintenance of MS Office O365 at enterprise-level</li>
+              <li>Implemented Application Protection and Data Protection Policies in Microsoft Intune for 800 devices, ensuring security and compliance.</li>
+              <li>Developed and enforced Data Loss Prevention policies using Microsoft Purview to protect critical data across the organization.</li>
+              <li>Automated data migration from Dropbox to SharePoint for 85,000 transactions using Power Automate.</li>
+              <li>Created knowledge base articles, internal training modules, and user guides for over 300 users, supporting smooth system transitions.</li>
+            </ul>
+            <div class="tech-buttons">
+                <span>Compliance</span>
+                <span>Process Automation</span>
+                <span>Risk Management</span>
+                <span>Incident Response</span>
+                <span>IT Governance</span>
+            </div>
+          </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>   
+        <div class="projects-grid">
+          <!-- Project 1: Therapy Chatbot -->
+          <div class="project-card">
+            <div class="project-img-container">
+              <img src="./assets/project-1.jpeg" alt="Therapy Chatbot" class="project-img" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Therapy Chatbot</h3>
+              <p class="project-description">
+                A mental health support chatbot that provides empathetic responses using Natural Language Processing (NLP). Designed to simulate therapeutic conversations and offer emotional support through text-based interactions.
+              </p>
+              <a href="https://github.com/krupas23/Therapy-Chatbot" class="github-btn" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>        
+          <!-- Project 2: Sentiment Analysis -->
+          <div class="project-card">
+            <div class="project-img-container">
+              <img src="./assets/project-2.jpeg" alt="Sentiment Analysis" class="project-img" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Subreddit Sentiment Analysis</h3>
+              <p class="project-description">
+                Analyzed diverse subreddits (Politics, Philosophy, Memes, News) to understand mental health discussions. Implemented NLP models (VADER, Empath, LDA) achieving 85% accuracy in sentiment prediction across different social media contexts.
+              </p>
+              <a href="https://github.com/" class="github-btn">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>      
+          <!-- Project 3: KidEaseHub -->
+          <div class="project-card">
+            <div class="project-img-container">
+              <img src="./assets/project-3.jpeg" alt="KidEaseHub" class="project-img" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">KidEaseHub</h3>
+              <p class="project-description">
+                An Android app for children and parents featuring task management, educational games, and whiteboard tools. Implemented autism detection using AI models (KNN, Random Forest, SVM) and built with XML, Java, and Firebase.
+              </p>
+              <a href="https://github.com/krupas23/KidEaseHub" class="github-btn" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>        
+          <!-- Project 4: FreshMart -->
+          <div class="project-card">
+            <div class="project-img-container">
+              <img src="./assets/project-4.jpeg" alt="FreshMart" class="project-img" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">FreshMart</h3>
+              <p class="project-description">
+                A comprehensive e-commerce platform for grocery shopping with integrated payment processing. Developed using the MERN stack (MongoDB, Express, React, Node.js) with a custom admin dashboard for inventory management.
+              </p>
+              <a href="https://github.com/" class="github-btn">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>         
+          <!-- Project 5: IoT Mine Detection -->
+          <div class="project-card">
+            <div class="project-img-container">
+              <img src="./assets/project-5.jpeg" alt="IoT Mine Detection" class="project-img" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">IoT Mine Safety System</h3>
+              <p class="project-description">
+                Developed a real-time gas and moisture detection system for mines using Arduino IDE and ESP32 Wi-Fi module. Created cloud connectivity for sensor data monitoring, enabling immediate safety alerts and environmental condition mapping.
+              </p>
+              <a href="https://github.com/" class="github-btn">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+          <!-- Project 6: QR Authentication -->
+          <div class="project-card">
+            <div class="project-img-container">
+              <img src="./assets/project-6.jpeg" alt="QR Authentication" class="project-img" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">QR-based ID Authentication</h3>
+              <p class="project-description">
+                A secure identity verification system using QR code technology. Features encrypted user data, real-time validation, and a user-friendly interface for quick authentication across various security applications.
+              </p>
+              <a href="https://github.com/" class="github-btn">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+    </section>
+    <section id="research">
+        <p class="section__text__p1">Explore my</p>
+        <h1 class="title">Research Papers</h1>
+        <div class="research-container">
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <div class="paper">
+                            <h3>Therapy Chatbot: A Cognitive Behavioral Approach</h3>
+                            <p class="publication">IEEE XPLORE</p>
+                            <p class="abstract">This paper proposes an AI-powered chatbot that identifies depression and other mental health issues, offering cognitive behavioral therapy to help individuals overcome negative feelings. The chatbot communicates with users, understanding their emotional state and providing advice, motivational content, and relaxation resources.</p>
+                            <div class="paper-link-container">
+                                <a href="https://ieeexplore.ieee.org/document/10201725" class="paper-link" target="_blank">Read Paper</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <div class="paper">
+                            <h3>Tag Recommendation System for Marathi News Articles</h3>
+                            <p class="publication">International Journal For Research in Applied Science and Engineering Technology</p>
+                            <p class="abstract">This paper explores the use of multi-label classification with the Binary Relevance technique to determine tags for Marathi news articles, enhancing user experience by recommending relevant content.</p>
+                            <div class="paper-link-container">
+                                <a href="https://www.ijraset.com/research-paper/tag-recommendation-system-for-marathi-news-articles" class="paper-link" target="_blank">Read Paper</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <div class="paper">
+                            <h3>Stock Price Prediction Using Arima Forecasting and LSTM Based Forecasting, Competitive Analysis</h3>
+                            <p class="publication">International Journal For Research in Applied Science and Engineering Technology</p>
+                            <p class="abstract">This paper compares the ARIMA and LSTM approaches for stock price forecasting, highlighting the strengths and challenges of each, with LSTM showing greater forecasting potential, though data manipulation plays a crucial role.</p>
+                            <div class="paper-link-container">
+                                <a href="https://www.ijraset.com/research-paper/stock-price-prediction-using-arima-forecasting-and-lstm" class="paper-link" target="_blank">Read Paper</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-nav">
+                    <button class="carousel-btn prev-btn">❮</button>
+                    <div class="carousel-dots">
+                        <span class="carousel-dot active"></span>
+                        <span class="carousel-dot"></span>
+                        <span class="carousel-dot"></span>
+                    </div>
+                    <button class="carousel-btn next-btn">❯</button>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:krupashah630@gmail.com">krupashah630@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/krupas23/" target="_blank">LinkedIn</a></p>
+          </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#projects">Research</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2025 Krupa Shah. All Rights Reserved.</p>
+    </footer> 
+    <script src="script.js"></script>
 </body>
 </html>
