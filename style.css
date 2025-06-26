@@ -1,9 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,600&display=swap');
+:root {
+  --primary-color: #4B6CB7;
+  --accent-color: #182848;
+  --highlight-color: #FDC830;
+  --neutral-bg: #F9F9F9;
+  --text-color: #333333;
+}
 
 *{
     margin: 0;
     padding: 0;
 }
+
+body {
+  background-color: var(--neutral-bg);
+  color: var(--text-color);
+}
+
 
 body {
     font-family:"Poppins", sans-serif;
@@ -34,13 +47,53 @@ a,
   top: 0;
   left: 0;
   width: 100%;
-  height: 17vh;           /* keep your existing height */
+  height: 12vh;           /* keep your existing height */
   background: #fff;       /* ensure it sits atop the page */
   z-index: 1000;          /* above all other content */
   display: flex;
   justify-content: space-around;
   align-items: center;
+  box-shadow: 2px 2px 8px rgba(2, 2, 2, 0.1);
 }
+
+.nav-links a:hover {
+  text-decoration-color: var(--accent-color);
+}
+
+.btn-color-1 {
+  background-color: var(--highlight-color);
+  color: var(--accent-color);
+  border: none;
+}
+
+.btn-color-1:hover {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.btn-color-2 {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-color-2:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.project-card {
+  background: white;
+  border: 1px solid var(--primary-color);
+}
+
+.project-title::after {
+  background: var(--highlight-color);
+}
+
+/* .section-title {
+  color: var(--primary-color);
+} */
+
 
 nav, 
 .nav-links {
@@ -57,14 +110,14 @@ nav {
     gap: 2rem;
     list-style: none;
     font-size: 1.25rem;
+    font-weight: 550;
 }
 
 
 a {    
     color: black;
-    text-decoration: none;
     text-decoration-color: white;
-    
+    text-decoration: none;
 }
 
 a:hover {
@@ -246,6 +299,7 @@ section {
 .title {
     font-size: 2.5rem;
     text-align: center;
+    color: #000;
 }
 
 #socials-container {
@@ -279,7 +333,7 @@ section {
 }
 
 .btn-color-2, .btn-color-1 {
-    border: rgb(53, 53, 53) 0.1rem solid;
+    border: #182848 0.1rem solid;
 }
 
 .btn-color-2:hover, .btn-color-1:hover {
@@ -287,7 +341,7 @@ section {
 }
 
 .btn-color-2:hover, .btn-color-1 {
-    background: rgb(53, 53, 53);
+    background: #182848;
     color: white;
 }
 
@@ -315,12 +369,12 @@ section {
 
 .about-containers{
     gap: 2rem;
-    margin-bottom: 2rem;
+    margin: 10px;
     margin-top: 2rem;
 }
 
 .about-details-container{
-    margin-top: 2rem;
+    margin-top: 5rem;
     flex-direction: column;
     display: flex;
 }
@@ -347,6 +401,12 @@ section {
 .text-container p {
   margin: 5px;
   color: #000;
+  font-size: medium;
+}
+
+.text-container li {
+  font-size: medium;
+  color: #000;
 }
 
 .section__pic-container{
@@ -367,6 +427,7 @@ section {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-align: center;
+    color: #000;
 }
 
 .skills-container {
@@ -450,13 +511,13 @@ section {
 }
   
 .experience-container {
-    width: auto;
+    width: 70rem;
     margin: 0 auto;
     text-align: center;
   }
   
   .job {
-    background-color: #ffffff;
+    background-color: var(--accent-color);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 2%;
     margin-bottom: 20px;
@@ -465,52 +526,45 @@ section {
   
   .job .role {
     font-size: 1.2em;
-    color: #6c757d;
+    color: white;
     margin: 5px 0;
   }
   
   .job .duration {
     font-size: 1em;
-    color: #868e96;
+    color: whitesmoke;
     margin: 5px 0;
   }
   
-  .job .job-link {
-    color: rgb(148, 72, 72);
-    text-decoration: none;
-    text-decoration-color: white;
-  }
-
-  .job-link:hover {
-    color: grey;
-    text-decoration: underline;
-    text-underline-offset: 0.5rem;
-    text-decoration-color: rgb(181, 181, 181);
+  .job {
+    color: white; 
   }
 
   .responsibilities {
-    text-align: left;
-    list-style-type: none;
+    text-align: center;
+    list-style-type: circle;
+    list-style-position: inside;
     padding-left: 20px;
   }
   
   .responsibilities li {
     font-size: 1em;
-    color: #495057;
+    color: white;
     margin-bottom: 10px;
+    text-wrap: normal;
   }
-  
+
   .tech-buttons {
     margin-top: 30px;
     display: flex; /* Changed from flexbox to flex */
     flex-wrap: wrap; /* Allow buttons to wrap to next line */
-    justify-content: center; /* Center the buttons */
-    gap: 10px; /* Consistent gap between buttons */
+    justify-content: center;
+    gap: 10px;
 }
 
 .tech-buttons span {
-    background-color: rgb(53, 53, 53);
-    color: #fff;   
+    background-color: white;
+    color: var(--accent-color);   
     border: none;
     padding: 8px 15px; /* Slightly smaller padding on mobile */
     font-size: 0.9em; /* Slightly smaller font on mobile */
@@ -524,10 +578,9 @@ section {
 
 /* Projects Section */
 
-/* Projects Section Styling */
 #projects {
     position: relative;
-    padding: 2rem 0;
+    padding: 2rem 0;    
   }
   
   /* Projects Grid Layout */
@@ -544,7 +597,7 @@ section {
   .project-card {
     border-radius: 1rem;
     overflow: hidden;
-    background: rgb(250, 250, 250);
+    background: white;
     border: 1px solid rgb(163, 163, 163);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -553,38 +606,11 @@ section {
     flex-direction: column;
     animation: fadeIn 0.8s ease-in-out;
   }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
+
   .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Project Image Container */
-  .project-img-container {
-    overflow: hidden;
-    height: 200px;
-  }
-  
-  .project-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s;
-  }
-  
-  .project-card:hover .project-img {
-    transform: scale(1.05);
+    background-color: var(--accent-color);
   }
   
   /* Project Content */
@@ -902,16 +928,4 @@ section {
   
   .email-icon {
     height: 2.5rem;
-  }
-
-/* FOOTER SECTION */
-
-footer {
-    background-color: #c3c3c3;
-    height:fit-content;
-  }
-  
-footer p {
-  background-color: #c3c3c3;
-   text-align: center;
   }
