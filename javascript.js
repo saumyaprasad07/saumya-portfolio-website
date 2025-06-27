@@ -161,3 +161,5 @@ document.head.insertAdjacentHTML('beforeend', `
     // Initialize carousel
     updateCarousel();
 });
+
+

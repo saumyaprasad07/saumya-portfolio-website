@@ -461,7 +461,6 @@ section {
     font-size: 1rem;
     margin-bottom: 1.5rem;
     margin-top: 1rem;
-    color: white;
 }
 
 
@@ -496,7 +495,7 @@ section {
 #education {
   position: relative;
   text-align: center;
-  background-color: #F4BB44
+
 }
 
 #education .section-title{
@@ -504,98 +503,134 @@ section {
   color: black;
 }
 
-.education-container {
-    width: 70rem;
-    margin: 0 auto;
-    text-align: center;
-  }
-
 .edu {
-    background-color: var(--accent-color);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 2%;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    color: white;
-  }
-
-.edu .duration{
-  color: white;
-}
- 
-/* Experience Section */
-
-#experience {
-    position: relative;
-    text-align: center;
-   
-}
-  
-.experience-container {
-    width: 70rem;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .job {
-    background-color: var(--accent-color);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 2%;
-    margin-bottom: 20px;
-    border-radius: 8px;
-  }
-  
-  .job .role {
-    font-size: 1.2em;
-    color: white;
-    margin: 5px 0;
-  }
-  
-  .job .duration {
-    font-size: 1em;
-    color: whitesmoke;
-    margin: 5px 0;
-  }
-  
-  .job {
-    color: white; 
-  }
-
-  .responsibilities {
-    text-align: center;
-    list-style-type: circle;
-    list-style-position: inside;
-    padding-left: 20px;
-  }
-  
-  .responsibilities li {
-    font-size: 1em;
-    color: white;
-    margin-bottom: 10px;
-    text-wrap: normal;
-  }
-
-  .tech-buttons {
-    margin-top: 30px;
-    display: flex; /* Changed from flexbox to flex */
-    flex-wrap: wrap; /* Allow buttons to wrap to next line */
-    justify-content: center;
-    gap: 10px;
-}
-
-.tech-buttons span {
     background-color: white;
-    color: var(--accent-color);   
-    border: none;
-    padding: 8px 15px; /* Slightly smaller padding on mobile */
-    font-size: 0.9em; /* Slightly smaller font on mobile */
-    border-radius: 5px;
-    cursor: default;
-    transition: background-color 0.3s;
-    margin-bottom: 8px; /* Add some bottom margin */
-    display: inline-block; /* Ensure buttons maintain their block nature */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 2%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    color: white;
+  }
+
+.edu h3 {
+  color: #1A1F71;
 }
 
+.edu .duration {
+  color: #333;
+  font-weight: 500;
+}
+
+.edu .responsibilities li {
+  color: #000000;
+  margin-top: 0.5rem;
+}
+
+/* Timeline Section - Replaces existing #timeline styles */
+#timeline {
+  padding: 4rem 2rem;
+  position: relative;
+}
+
+.timeline-wrapper {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* The central timeline line */
+.timeline-wrapper::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: #1A1F71;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1.5px; /* Half of the line's width */
+}
+
+/* Container for each timeline item */
+.timeline-item {
+  padding: 1rem 3rem;
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+/* Position items on the left */
+.timeline-item-left {
+  left: 0;
+  padding-right: 40px; /* Space from the central line */
+}
+
+/* Position items on the right */
+.timeline-item-right {
+  left: 50%;
+  padding-left: 40px; /* Space from the central line */
+}
+
+/* The timeline icon */
+.timeline-icon {
+  position: absolute;
+  top: 20px;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  border-radius: 50%;
+  background-color: #FDC830;
+  color: #1A1F71;
+  font-size: 1.2rem;
+  text-align: center;
+  z-index: 10;
+  box-shadow: 0 0 0 4px white;
+}
+
+/* Position icon for left items */
+.timeline-item-left .timeline-icon {
+  right: -1.25rem; /* Half of icon's width to center on the line */
+}
+
+/* Position icon for right items */
+.timeline-item-right .timeline-icon {
+  left: -1.25rem; /* Half of icon's width to center on the line */
+}
+
+/* The content box */
+.timeline-content {
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+/* Responsive styles for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  /* Make the central line go to the left */
+  .timeline-wrapper::after {
+    left: 31px;
+  }
+
+  /* Make all items full-width */
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 15px;
+  }
+  
+  /* Reposition all items to the right of the line */
+  .timeline-item-left,
+  .timeline-item-right {
+    left: 0;
+  }
+
+  /* Position all icons on the line */
+  .timeline-item-left .timeline-icon,
+  .timeline-item-right .timeline-icon {
+    left: 15px;
+  }
+}
 
 /* Projects Section */
 
