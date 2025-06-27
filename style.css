@@ -5,6 +5,13 @@
   --highlight-color: #FDC830;
   --neutral-bg: #F9F9F9;
   --text-color: #333333;
+  --navy: #0A1D37;
+  --royal-blue: #2C3E91;
+  --sky-blue: #58A6FF;
+  --slate-blue: #3B5998;
+  --powder-blue: #DCE6F1;
+  --midnight-blue: #1A1F71;
+  --steel-blue: #5B7DB1;
 }
 
 *{
@@ -13,7 +20,7 @@
 }
 
 body {
-  background-color: var(--neutral-bg);
+  background-color: #fff;
   color: var(--text-color);
 }
 
@@ -290,12 +297,6 @@ section {
     text-align: center;
 }
 
-.section__text__p2 {
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-    margin-top: 1rem;
-}
-
 .title {
     font-size: 2.5rem;
     text-align: center;
@@ -421,13 +422,14 @@ section {
 #skills {
     position: relative;
     text-align: center;
+    background-color: white;
 }
 
 .section-title {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-align: center;
-    color: #000;
+    color: #000000;
 }
 
 .skills-container {
@@ -438,10 +440,11 @@ section {
 }
 
 .skills-category {
-    background-color: white;
-    border: 0.1rem solid rgb(163, 163, 163);
+    background-color: var(--navy);
+    border: 0.1rem solid rgb(0, 0, 0);
     border-radius: 2rem;
     padding: 1.5rem;
+    margin: 2rem;
     width: 200px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -450,7 +453,17 @@ section {
 .skills-category:hover {
     transform: translateY(-5px);
     box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: white;
+    color:var(--royal-blue);
 }
+
+.section__text__p2 {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    color: white;
+}
+
 
 .skills-category h3 {
     font-size: 1.5rem;
@@ -465,49 +478,57 @@ section {
 }
 
 .skills__container span {
-    background-color: rgb(53, 53, 53);
-    color: #fff;
+    background-color: white;
+    color: var(--navy);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: .75rem;    
     transition: transform 0.3s ease;
     display: inline-block;
-    /*animation: pulseEffect 2s ease-in-out infinite alternate;*/
 }
 
 .skills__container span:hover {
     cursor: default;
 }
 
-/* Pulse Effect for Skills */
-@keyframes pulseEffect {
-    from {
-        transform: scale(1);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    }
-    to {
-        transform: scale(1.05);
-        box-shadow: 0 5px 16px rgba(0, 0, 0, 0.4);
-    }
-}
-
-
 /* Education */
 
 #education {
   position: relative;
   text-align: center;
+  background-color: #F4BB44
 }
 
-.title{
+#education .section-title{
   font-size: 2.5rem;
+  color: black;
 }
 
+.education-container {
+    width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+.edu {
+    background-color: var(--accent-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 2%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    color: white;
+  }
+
+.edu .duration{
+  color: white;
+}
+ 
 /* Experience Section */
 
 #experience {
     position: relative;
     text-align: center;
+   
 }
   
 .experience-container {
@@ -611,6 +632,7 @@ section {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     background-color: var(--accent-color);
+
   }
   
   /* Project Content */
