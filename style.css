@@ -97,11 +97,6 @@ a,
   background: var(--highlight-color);
 }
 
-/* .section-title {
-  color: var(--primary-color);
-} */
-
-
 nav, 
 .nav-links {
     display: flex;
@@ -440,7 +435,6 @@ section {
 }
 
 .skills-category {
-    background-color: var(--navy);
     border: 0.1rem solid rgb(0, 0, 0);
     border-radius: 2rem;
     padding: 1.5rem;
@@ -451,10 +445,9 @@ section {
 }
 
 .skills-category:hover {
-    transform: translateY(-5px);
+    transform: translateY(-25px);
     box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.15);
     background-color: white;
-    color:var(--royal-blue);
 }
 
 .section__text__p2 {
@@ -642,7 +635,7 @@ section {
   /* Projects Grid Layout */
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 2rem;
     max-width: 1200px;
     margin: 2rem auto;
@@ -666,9 +659,7 @@ section {
   .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    background-color: var(--accent-color);
-
-  }
+    }
   
   /* Project Content */
   .project-content {
